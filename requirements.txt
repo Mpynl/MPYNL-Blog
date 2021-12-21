@@ -1,0 +1,35 @@
+alembic @ file:///tmp/build/80754af9/alembic_1637680647426/work
+argon2-cffi @ file:///Users/ktietz/demo/mc3/conda-bld/argon2-cffi_1629726290123/work
+bcrypt @ file:///Users/ktietz/demo/mc3/conda-bld/bcrypt_1629370607831/work
+certifi==2021.5.30
+cffi @ file:///Users/ktietz/Code/oss/ci_pkgs/cffi_1624487777258/work
+click==8.0.3
+cryptography @ file:///Users/builder/miniconda3/envs/prefect/conda-bld/cryptography_1635432108608/work
+dnspython==1.16.0
+email-validator @ file:///tmp/build/80754af9/email-validator_1623674793554/work
+Flask @ file:///tmp/build/80754af9/flask_1634118196080/work
+Flask-Migrate @ file:///home/conda/feedstock_root/build_artifacts/flask-migrate_1627821482519/work
+Flask-Script==2.0.6
+Flask-SQLAlchemy @ file:///tmp/build/80754af9/flask-sqlalchemy_1616180561581/work
+Flask-WTF @ file:///tmp/build/80754af9/flask-wtf_1622018667443/work
+greenlet @ file:///Users/ktietz/demo/mc3/conda-bld/greenlet_1628721647727/work
+idna @ file:///tmp/build/80754af9/idna_1637925883363/work
+importlib-metadata @ file:///Users/builder/miniconda3/envs/prefect/conda-bld/importlib-metadata_1638777154045/work
+importlib-resources @ file:///tmp/build/80754af9/importlib_resources_1625135880749/work
+itsdangerous @ file:///tmp/build/80754af9/itsdangerous_1621432558163/work
+Jinja2==3.0.3
+lxml==4.6.4
+Mako @ file:///tmp/build/80754af9/mako_1610650590832/work
+MarkupSafe @ file:///Users/ktietz/demo/mc3/conda-bld/markupsafe_1629137411893/work
+numpy==1.21.4
+passlib==1.7.4
+pycparser @ file:///tmp/build/80754af9/pycparser_1636541352034/work
+PyMySQL @ file:///Users/ktietz/demo/mc3/conda-bld/pymysql_1629702202458/work
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+python-docx==0.8.11
+six @ file:///tmp/build/80754af9/six_1623709665295/work
+SQLAlchemy @ file:///Users/builder/miniconda3/envs/prefect/conda-bld/sqlalchemy_1638348265746/work
+termcolor==1.1.0
+Werkzeug @ file:///tmp/build/80754af9/werkzeug_1635505089296/work
+WTForms @ file:///Users/ktietz/demo/mc3/conda-bld/wtforms_1629354749392/work
+zipp @ file:///tmp/build/80754af9/zipp_1633618647012/work

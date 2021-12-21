@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<!--<div class="container content">-->
+<!--  <h1 class="title-center">{{article.title}}</h1>-->
+<!--  <p class="post-author fr">作者：{{article.author}} &nbsp {{article.create_date}} </p>-->
+<!--  <div class="clear">-->
+<!--    {{article.content | safe}}-->
+<!--  </div>-->
+<!--</div>-->
+
+
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('{{ url_for('static', filename='images/post-bg.jpg') }}')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>{{article.title}}</h1>
+            <span class="meta">作者
+              <a href="#">{{article.author}}</a>
+              {{article.create_date}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Post Content -->
+  <article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          {{article.content | safe}}
+        </div>
+      </div>
+    </div>
+  </article>
+
+
+
+{% endblock %}

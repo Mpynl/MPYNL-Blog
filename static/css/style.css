@@ -1,0 +1,27 @@
+/*footer*/
+.footer { background: #2f3c4e; text-align: center; font-size: 12px; color: #9baec7; margin-top:50px}
+.footer-nav { height: 44px; line-height: 44px; border-bottom: 1px #445060 solid; text-align: center; }
+.footer-nav a { color: #9baec7; padding: 0px 15px; cursor: pointer; }
+.footer-nav a:focus,.footer-nav a:active{color: #9baec7;}
+.copy { border-top: 1px #19293d solid; padding: 12px 0 25px 0; }
+
+.titleh2 {
+    position: relative;
+    border-bottom: 1px solid #E4E7EA;
+    padding-bottom: 22px;
+    margin-bottom: 15px;
+}
+
+/*表单错误消息*/
+.messages {padding-left:0px}
+.messages .info {
+    padding-left: 0px;
+    color: red;
+}
+.errorlist {
+    color: red;
+}
+
+.content {
+    min-height:500px;margin-top:150px
+}

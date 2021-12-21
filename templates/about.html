@@ -1,0 +1,29 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('{{ url_for('static', filename='images/about-bg.jpg') }}')">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="page-heading">
+              <h1>About Me</h1>
+              <span class="subheading">乔布斯说，“我觉得每个人都应该学习一门编程语言。
+                学习编程教你如何思考.
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main Content -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <p>
+            MPYNL 始于2019年，目前已上线了个人云盘，个人博客，MPYNL导航等服务，详细内容请访问https://nav.mpynl.cn
+          </p>
+        </div>
+      </div>
+    </div>
+{% endblock %}

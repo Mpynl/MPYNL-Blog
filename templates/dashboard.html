@@ -1,0 +1,35 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="container content">
+  <h1>控制台 <small> 欢迎 {{session.username}}</small>
+    <a class="btn btn-success" href="/add_article" style="float:right"> 添加笔记 </a>
+  </h1>
+  <hr>
+  <table class="table">
+    <tr>
+      <th>ID</th>
+      <th>标题</th>
+      <th>作者</th>
+      <th>日期</th>
+      <th></th>
+      <th></th>
+    </tr>
+    {% for article in articles %}
+      <tr>
+        <td>{{article.id}}</td>
+        <td>{{article.title}}</td>
+        <td>{{article.author}}</td>
+        <td>{{article.create_date}}</td>
+        <td><a href="edit_article/{{article.id}}" class="btn btn-info" style="float:right">Edit</a></td>
+        <td>
+          <form action="{{url_for('delete_article', id=article.id)}}" method="post">
+            <input type="hidden" name="_method" value="DELETE">
+            <input type="submit" value="Delete" class="btn btn-danger">
+          </form>
+        </td>
+      </tr>
+    {% endfor %}
+  </table>
+</div>
+{% endblock %}

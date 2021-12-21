@@ -1,0 +1,35 @@
+
+{% extends 'layout.html' %}
+
+{% block body %}
+<div class="container content">
+  <div class="card bg-light" style="width: 600px;margin: auto">
+    <article class="card-body mx-auto" style="width: 400px">
+      <h4 class="card-title mt-3 text-center">用户登录</h4>
+      {% from "includes/_formhelpers.html" import render_field %}
+      <form method="POST" action="">
+        {{ form.csrf_token }}
+        <div class="form-group">
+          {{ render_field(form.username, class_="form-control") }}
+        </div>
+        <div class="form-group">
+          {{ render_field(form.password, class_="form-control") }}
+        </div>
+        <div class="form-group">
+		<div class="col-sm-offset-2 col-sm-10">
+			<div class="checkbox">
+				<label>
+					<input type="checkbox"> 请记住我
+				</label>
+			</div>
+		</div>
+	</div>
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary btn-block">登录</button>
+        </div>
+        <p class="text-center">还没有有账号? <a href="/register">去注册</a> </p>
+      </form>
+    </article>
+  </div>
+</div>
+{% endblock %}

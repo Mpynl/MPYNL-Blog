@@ -1,0 +1,50 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('{{ url_for('static', filename='images/home-bg.jpg') }}')">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="site-heading">
+              <h1>MPYNL 博客</h1>
+              <span class="subheading">科技再一次改变世界</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  {% if not articles %}
+    <div style="margin:100px;text-align:center" >
+      <h4>精彩马上回来......</h4>
+    </div>
+  {% else %}
+  <div class="container content">
+    {% for article in articles %}
+      <article class="post-preview">
+        <h1 class="post-title">{{article.title}}</h1>
+        <p class="post-author">作者：{{article.author}} &nbsp {{article.create_date}} </p>
+        <div class="clearfix">
+        <a class="btn btn-primary float-right" href="article/{{article.id}}">查看全文 →</a>
+        </div>
+      </article>
+      <hr class="underline">
+    {% endfor %}
+    </div>
+    {% endif %}
+    <ul class="pagination justify-content-center mb-4">
+      {% if page == 1 %}
+        <li class="page-item disabled">
+            <a class="page-link" href="/index?page={page-1}">← Older</a>
+        </li>
+      {% else %}
+        <li>
+            <a class="page-link" href="/?page={{page-1}}">← Older</a>
+        </li>
+      {% endif %}
+        <li class="page-item">
+          <a class="page-link" href="/?page={{page+1}}">Newer →</a>
+        </li>
+      </ul>
+{% endblock %}
