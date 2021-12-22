@@ -1,15 +1,5 @@
 /*
- Navicat Premium Data Transfer
-
- Source Server         : dev
- Source Server Type    : MySQL
- Source Server Version : 80026
- Source Host           : 110.42.251.195:3306
- Source Schema         : blog
-
- Target Server Type    : MySQL
- Target Server Version : 80026
- File Encoding         : 65001
+数据库文件
 
  Date: 21/12/2021 19:52:02
 */
